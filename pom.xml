@@ -39,6 +39,8 @@
     <properties>
         <gdx.version>0.9.8-SNAPSHOT</gdx.version>
         <easy.mock.version>3.0</easy.mock.version>
+        <gwt.version>2.5.0</gwt.version>
+        <mockito.version>1.9.0</mockito.version>
     </properties>
 
     <dependencies>
@@ -51,6 +53,26 @@
             <groupId>com.badlogic.gdx</groupId>
             <artifactId>gdx-backend-lwjgl</artifactId>
             <version>${gdx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.badlogic.gdx</groupId>
+            <artifactId>gdx-backend-gwt</artifactId>
+            <version>${gdx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-dev</artifactId>
+            <version>${gwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-user</artifactId>
+            <version>${gwt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.gwt</groupId>
+            <artifactId>gwt-servlet</artifactId>
+            <version>${gwt.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -68,6 +90,12 @@
             <groupId>org.easymock</groupId>
             <artifactId>easymockclassextension</artifactId>
             <version>${easy.mock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
